@@ -8,6 +8,25 @@ package com.mycompany.proyectofinaled;
  *
  * @author Ibai
  */
-public class Nomina {
+public class Nomina implements INomina{
+
+    @Override
+    public int calculaNomina(Empleados e) {
+        int nomina = e.getSueldo();
+        
+        return nomina;
+    }
+
+    @Override
+    public void dameEmpleado(Empleados e) {
+        System.out.println(e.getNombre()+" "+e.getDni()+" "+e.getTlf()+" "+e.getEdad());
+    }
+
+    @Override
+    public int calculaNominaAnno(Empleados e) {
+        int nomina = e.getSueldo();
+        
+        return nomina*12;
+    }
     
 }
