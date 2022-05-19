@@ -1,13 +1,20 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package com.mycompany.proyectofinaled;
 
-/**
- *
- * @author Ibai
- */
 public class Empleados {
+    private String nombre;
+    private String tlf;
+    private int edad;
+    private String dni;
+    private int sueldo;
+
+    public Empleados(String nombre, String tlf, int edad, String dni, int sueldo) {
+        this.nombre = nombre;
+        this.tlf = tlf;
+        this.edad = edad;
+        this.dni = dni;
+        this.sueldo = sueldo;
+    }
+    
     
 }
