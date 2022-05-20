@@ -16,8 +16,4 @@ public interface INomina {
     
     public int calculaNominaAnno(Empleados e);
     
-    public int calculaNominaTotal();
-    
-    public int calculaNominaTotalAnno();
-    
 }

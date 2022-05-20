@@ -39,23 +39,6 @@ public class Nomina implements INomina{
         return nomina*12;
     }
 
-    @Override
-    public int calculaNominaTotal() {
-        int nominatotal = 0;
-        
-        for (int i = 0; i < 10; i++) {
-            nominatotal += empleados.get(i).getSueldo();
-        }
-        
-        return nominatotal;
-    }
-
-    @Override
-    public int calculaNominaTotalAnno() {
-        int nomina = calculaNominaTotal();
-        
-        return nomina*12;
-    }
     
     
     
