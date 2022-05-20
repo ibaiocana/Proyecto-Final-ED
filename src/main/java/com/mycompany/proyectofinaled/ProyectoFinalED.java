@@ -18,5 +18,12 @@ public class ProyectoFinalED {
         nomina.dameEmpleado(e);
         System.out.println("Empleado sueldo: "+nomina.calculaNomina(e));
         System.out.println("Empleado sueldo anual: "+nomina.calculaNominaAnno(e));
+        
+        Empleados a = new Empleados("pepe", 633223038, 20, "76627344R", 1500);
+        nomina = new Nomina(a);
+        
+        nomina.dameEmpleado(a);
+        System.out.println("Empleado sueldo: "+nomina.calculaNomina(a));
+        System.out.println("Empleado sueldo anual: "+nomina.calculaNominaAnno(a));
     }
 }
