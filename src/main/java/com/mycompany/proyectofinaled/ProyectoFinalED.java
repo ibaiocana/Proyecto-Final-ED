@@ -12,8 +12,8 @@ package com.mycompany.proyectofinaled;
 public class ProyectoFinalED {
 
     public static void main(String[] args) {
-        Nomina nomina = new Nomina();
         Empleados e = new Empleados("ibai", 633245038, 20, "76627788R", 1200);
+        Nomina nomina = new Nomina(e);
         
         nomina.dameEmpleado(e);
         System.out.println("Empleado sueldo: "+nomina.calculaNomina(e));
